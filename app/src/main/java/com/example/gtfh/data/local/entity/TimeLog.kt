@@ -9,5 +9,5 @@ data class TimeLog(
     val id: Int = 0,
     val entryTime: Long,
     var exitTime: Long? = null,
-    val date: String // e.g., "2024-08-20"
+    val date: String
 )

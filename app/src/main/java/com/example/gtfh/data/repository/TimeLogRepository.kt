@@ -3,9 +3,8 @@ package com.example.gtfh.data.repository
 import com.example.gtfh.data.local.dao.TimeLogDao
 import com.example.gtfh.data.local.entity.TimeLog
 import kotlinx.coroutines.flow.Flow
-import javax.inject.Inject
 
-class TimeLogRepository @Inject constructor(private val timeLogDao: TimeLogDao) {
+class TimeLogRepository(private val timeLogDao: TimeLogDao) {
 
     fun getAllLogs(): Flow<List<TimeLog>> = timeLogDao.getAllLogs()
 
